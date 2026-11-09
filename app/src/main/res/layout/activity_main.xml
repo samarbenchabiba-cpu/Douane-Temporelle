@@ -1,19 +1,136 @@
+
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#10182B"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/SC_tv_titre_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏳ TIME TRAVEL CUSTOMS"
+            android:textColor="#00E5FF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_sous_titre_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORMULAIRE D'ENREGISTREMENT"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_nom_label_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom du voyageur"
+            android:textColor="#00E5FF"
+            android:paddingTop="20dp"/>
+
+        <EditText
+            android:id="@+id/SC_et_nom_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez votre nom"
+            android:textColor="#FFFFFF"
+            android:hintTextColor="#AAAAAA"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/tv_naissance_label_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Année de naissance"
+            android:textColor="#00E5FF"
+            android:paddingTop="15dp"/>
+
+        <EditText
+            android:id="@+id/et_naissance_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exemple : 1990"
+            android:textColor="#FFFFFF"
+            android:hintTextColor="#AAAAAA"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tv_destination_label_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Année de destination"
+            android:textColor="#00E5FF"
+            android:paddingTop="15dp"/>
+
+        <EditText
+            android:id="@+id/et_destination_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exemple : 2050"
+            android:textColor="#FFFFFF"
+            android:hintTextColor="#AAAAAA"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tv_motif_label_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motif du voyage"
+            android:textColor="#00E5FF"
+            android:paddingTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_motif_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_tourisme_nj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tourisme"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/rb_passe_nj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modification du passé"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/rb_fuite_nj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuite"
+                android:textColor="#FFFFFF"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_inspecter_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSPECTER LE PROFIL"
+            android:textStyle="bold"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#10182B"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
