@@ -20,12 +20,12 @@ public class ResultActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        // ربط عناصر الواجهة
+        // Rabet  les éléments mta3 l’interface.
         layoutResultat = findViewById(R.id.layout_resultat_nj);
         tvResultat = findViewById(R.id.tv_resultat_nj);
         btnNouveau = findViewById(R.id.btn_nouveau_nj);
 
-        // استقبال النتيجة والاسم
+        // Nesta9blou el résultat w esm el voyageur.
         String matricule = AppKeys.MATRICULE;
 
         Intent intent = getIntent();
@@ -43,7 +43,7 @@ public class ResultActivity extends Activity {
             nom = "Voyageur";
         }
 
-        // تغيير اللون والرسالة حسب النتيجة
+        // Nbadlou el couleur w el message 7asb el résultat
         if (verdict) {
 
             layoutResultat.setBackgroundColor(
@@ -67,7 +67,7 @@ public class ResultActivity extends Activity {
             );
         }
 
-        // العودة إلى النشاط الأول مع إغلاق الأنشطة السابقة
+        // Narj3ou lel activité 1 w nsakrou les activités eli 9bal
         btnNouveau.setOnClickListener(v -> {
 
             Intent retour = new Intent(
