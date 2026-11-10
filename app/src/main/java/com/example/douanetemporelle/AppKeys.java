@@ -1,4 +1,3 @@
-
 package com.example.douanetemporelle;
 
 public class AppKeys {
@@ -11,4 +10,3 @@ public class AppKeys {
         return matricule + "_" + nom;
     }
 }
-
