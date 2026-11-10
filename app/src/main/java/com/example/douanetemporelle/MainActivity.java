@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // ربط عناصر الواجهة
+        // Rabet les éléments mta3 l’interface.
         nom = findViewById(R.id.SC_et_nom_nj);
         naissance = findViewById(R.id.SC_et_naissance_nj);
         destination = findViewById(R.id.SC_et_destination_nj);
@@ -30,12 +30,12 @@ public class MainActivity extends Activity {
 
         btnInspecter.setOnClickListener(v -> {
 
-            // قراءة المعلومات المدخلة
+            // N9raw les informations eli dakhelhom l’utilisateur
             String nomVoyageur = nom.getText().toString().trim();
             String anneeNaissance = naissance.getText().toString().trim();
             String anneeDestination = destination.getText().toString().trim();
 
-            // التحقق من الحقول
+            // Nethabtou les champs mahoumch ferghin          
             if (nomVoyageur.isEmpty() ||
                     anneeNaissance.isEmpty() ||
                     anneeDestination.isEmpty()) {
@@ -43,10 +43,11 @@ public class MainActivity extends Activity {
                 Toast.makeText(this,
                         "Veuillez remplir tous les champs",
                         Toast.LENGTH_SHORT).show();
+        
                 return;
             }
 
-            // التحقق من اختيار الدافع
+            // Nethabtou ken el motif choisi wala lé
             int selectedId = motifs.getCheckedRadioButtonId();
 
             if (selectedId == -1) {
@@ -69,7 +70,7 @@ public class MainActivity extends Activity {
                 return;
             }
 
-            // إنشاء نص الدافع
+            // Ncréyiw texte mta3 el motif
             String motif = "";
 
             if (selectedId == R.id.SC_rb_tourisme_nj) {
@@ -80,13 +81,13 @@ public class MainActivity extends Activity {
                 motif = "Fuite";
             }
 
-            // إنشاء Intent صريح نحو النشاط الثاني
+            // Ncréyiw Intent explicite lel activité 2
             Intent intent = new Intent(
                     MainActivity.this,
                     VerificationActivity.class
             );
 
-            // إرسال المعلومات باستعمال مفاتيح ديناميكية
+            // Nab3thou les informations b clés dynamiques.
             String matricule = AppKeys.MATRICULE;
 
             intent.putExtra(
