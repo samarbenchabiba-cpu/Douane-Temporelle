@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -24,7 +23,7 @@
             android:padding="15dp"/>
 
         <TextView
-            android:id="@+id/tv_sous_titre_nj"
+            android:id="@+id/SC_tv_sous_titre_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FORMULAIRE D'ENREGISTREMENT"
@@ -34,7 +33,7 @@
             android:padding="10dp"/>
 
         <TextView
-            android:id="@+id/tv_nom_label_nj"
+            android:id="@+id/SC_tv_nom_label_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nom du voyageur"
@@ -47,11 +46,11 @@
             android:layout_height="wrap_content"
             android:hint="Entrez votre nom"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
+            android:textColorHint="#AAAAAA"
             android:inputType="textPersonName"/>
 
         <TextView
-            android:id="@+id/tv_naissance_label_nj"
+            android:id="@+id/SC_tv_naissance_label_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Année de naissance"
@@ -59,16 +58,16 @@
             android:paddingTop="15dp"/>
 
         <EditText
-            android:id="@+id/et_naissance_nj"
+            android:id="@+id/SC_et_naissance_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Exemple : 1990"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
+            android:textColorHint="#AAAAAA"
             android:inputType="number"/>
 
         <TextView
-            android:id="@+id/tv_destination_label_nj"
+            android:id="@+id/SC_tv_destination_label_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Année de destination"
@@ -76,16 +75,16 @@
             android:paddingTop="15dp"/>
 
         <EditText
-            android:id="@+id/et_destination_nj"
+            android:id="@+id/SC_et_destination_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Exemple : 2050"
             android:textColor="#FFFFFF"
-            android:hintTextColor="#AAAAAA"
+            android:textColorHint="#AAAAAA"
             android:inputType="number"/>
 
         <TextView
-            android:id="@+id/tv_motif_label_nj"
+            android:id="@+id/SC_tv_motif_label_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Motif du voyage"
@@ -93,27 +92,27 @@
             android:paddingTop="20dp"/>
 
         <RadioGroup
-            android:id="@+id/rg_motif_nj"
+            android:id="@+id/SC_rg_motif_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RadioButton
-                android:id="@+id/rb_tourisme_nj"
+                android:id="@+id/SC_rb_tourisme_nj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tourisme"
                 android:textColor="#FFFFFF"/>
 
             <RadioButton
-                android:id="@+id/rb_passe_nj"
+                android:id="@+id/SC_rb_passe_nj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Modification du passé"
                 android:textColor="#FFFFFF"/>
 
             <RadioButton
-                android:id="@+id/rb_fuite_nj"
+                android:id="@+id/SC_rb_fuite_nj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fuite"
@@ -122,7 +121,7 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/btn_inspecter_nj"
+            android:id="@+id/SC_btn_inspecter_nj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="INSPECTER LE PROFIL"

@@ -1,0 +1,44 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_resultat_nj"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    android:background="#087F46">
+
+    <TextView
+        android:id="@+id/tv_titre_resultat_nj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIME TRAVEL CUSTOMS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_resultat_nj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULTAT"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="30dp"/>
+
+    <Button
+        android:id="@+id/btn_nouveau_nj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOUVEAU VOYAGEUR"
+        android:textColor="#10182B"
+        android:textStyle="bold"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="35dp"/>
+
+</LinearLayout>
