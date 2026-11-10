@@ -1,4 +1,3 @@
-
 package com.example.douanetemporelle;
 
 import android.app.Activity;
