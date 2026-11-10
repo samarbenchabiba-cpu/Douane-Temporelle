@@ -14,15 +14,15 @@ public class VerificationActivity extends Activity {
 
     private String nomVoyageur;
 
-    // التحقق هل العدد أولي
+    // Nethabtou ken el nombre premier.
     private boolean estPremier(int nombre) {
 
-        // الأعداد الأقل من 2 ليست أولية
+        //Les nombres eli a9al men 2 mahomch premiers.
         if (nombre < 2) {
             return false;
         }
 
-        // اختبار القواسم
+        // Njarrbou les diviseurs.
         for (int i = 2; i <= Math.sqrt(nombre); i++) {
             if (nombre % i == 0) {
                 return false;
@@ -37,7 +37,7 @@ public class VerificationActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verification);
 
-        // ربط عناصر الواجهة
+        // Norbtou  les éléments mta3 l’interface.
         tvNom = findViewById(R.id.SC_tv_nom_nj);
         tvAge = findViewById(R.id.SC_tv_age_nj);
         tvMotif = findViewById(R.id.SC_tv_motif_nj);
@@ -46,7 +46,7 @@ public class VerificationActivity extends Activity {
         btnApprouver = findViewById(R.id.SC_btn_approuver_nj);
         btnRefuser = findViewById(R.id.SC_btn_refuser_nj);
 
-        // استقبال البيانات
+        // Nesta9blou les données.
         String matricule = AppKeys.MATRICULE;
 
         Intent intent = getIntent();
@@ -67,20 +67,20 @@ public class VerificationActivity extends Activity {
                 AppKeys.key(matricule, "MOTIF")
         );
 
-        // حساب العمر الزمني
+        // N7asbou l’âge temporel.
         int ageTemporel = destination - naissance;
 
-        // عرض المعلومات
+        // Na3rdhou les informations.
         tvNom.setText("VOYAGEUR : " + nomVoyageur);
         tvAge.setText("AGE TEMPOREL : " + ageTemporel + " ans");
         tvMotif.setText("MOTIF : " + motif);
 
-        // التحقق من المفارقة الزمنية
+        // Nethabtou ken fama paradoxe temporel wala lé
         boolean paradoxe = motif != null
                 && motif.equals("Modification du passé")
                 && estPremier(Math.abs(ageTemporel));
 
-        // تعطيل زر الموافقة إذا تحقق الشرط
+        // Na3mlou désactiver lel bouton Approuver ken el condition tet7a9a9
         if (paradoxe) {
 
             btnApprouver.setEnabled(false);
@@ -98,18 +98,18 @@ public class VerificationActivity extends Activity {
             tvStatut.setTextColor(0xFF00E676);
         }
 
-        // زر الموافقة
+        // Bouton Approuver
         btnApprouver.setOnClickListener(v -> {
             envoyerVerdict(true);
         });
 
-        // زر الرفض
+        // Bouton Refuser
         btnRefuser.setOnClickListener(v -> {
             envoyerVerdict(false);
         });
     }
 
-    // إرسال النتيجة إلى النشاط الثالث
+    // Nab3thou el résultat lel activité 3
     private void envoyerVerdict(boolean verdict) {
 
         Intent intent = new Intent(
