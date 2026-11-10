@@ -3,10 +3,10 @@ package com.example.douanetemporelle;
 
 public class AppKeys {
 
-    // رقم بطاقة الطالب: عوضه بآخر 4 أرقام من بطاقتك
+    // Nesta3mlou ekher 4 ar9am men carte étudiant
     public static final String MATRICULE = "1234";
 
-    // إنشاء المفاتيح بطريقة ديناميكية
+    // Ncréyiw les clés dynamiquement 7asb numéro étudiant.
     public static String key(String matricule, String nom) {
         return matricule + "_" + nom;
     }
