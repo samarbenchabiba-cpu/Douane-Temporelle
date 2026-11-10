@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="#10182B"
+    android:padding="10dp">
+
+    <!-- الصورة على اليسار بوزن 0.3 -->
+
+    <!-- المعلومات على اليمين بوزن 0.7 -->
+
+    <ImageView
+        android:id="@+id/SC_img_passport_nj"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        tools:srcCompat="@drawable/img_1" />
+
+    <RelativeLayout
+        android:id="@+id/SC_rl_passport_nj"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:padding="12dp"
+        android:background="#1B2940">
+
+        <TextView
+            android:id="@+id/SC_tv_titre_passport_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titre_passport"
+            android:textColor="#00E5FF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/SC_tv_nom_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SC_tv_titre_passport_nj"
+            android:layout_marginTop="35dp"
+            android:text="@string/voyageur_label"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/SC_tv_age_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SC_tv_nom_nj"
+            android:layout_marginTop="25dp"
+            android:text="@string/age_temporel_label"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/SC_tv_motif_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SC_tv_age_nj"
+            android:layout_marginTop="25dp"
+            android:text="@string/motif_label"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/SC_tv_statut_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SC_tv_motif_nj"
+            android:layout_marginTop="30dp"
+            android:text="@string/verification_label"
+            android:textColor="#00E676"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/SC_btn_approuver_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SC_tv_statut_nj"
+            android:layout_marginTop="35dp"
+            android:text="@string/approuver_btn"
+            android:backgroundTint="#00A86B"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/SC_btn_refuser_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SC_btn_approuver_nj"
+            android:layout_marginTop="15dp"
+            android:text="@string/refuser_btn"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</LinearLayout>

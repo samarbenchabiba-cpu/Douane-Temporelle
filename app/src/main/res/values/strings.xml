@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Douane Temporelle</string>
+    <string name="passport_image_desc">Passport image</string>
+    <string name="titre_passport">TIME PASSPORT</string>
+    <string name="voyageur_label">VOYAGEUR :</string>
+    <string name="age_temporel_label">AGE TEMPOREL :</string>
+    <string name="motif_label">MOTIF :</string>
+    <string name="verification_label">VERIFICATION&#8230;</string>
+    <string name="approuver_btn">APPROUVER</string>
+    <string name="refuser_btn">REFUSER</string>
 </resources>

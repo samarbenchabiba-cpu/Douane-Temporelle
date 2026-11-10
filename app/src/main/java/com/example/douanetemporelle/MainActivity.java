@@ -23,10 +23,10 @@ public class MainActivity extends Activity {
 
         // ربط عناصر الواجهة
         nom = findViewById(R.id.SC_et_nom_nj);
-        naissance = findViewById(R.id.et_naissance_nj);
-        destination = findViewById(R.id.et_destination_nj);
-        motifs = findViewById(R.id.rg_motif_nj);
-        btnInspecter = findViewById(R.id.btn_inspecter_nj);
+        naissance = findViewById(R.id.SC_et_naissance_nj);
+        destination = findViewById(R.id.SC_et_destination_nj);
+        motifs = findViewById(R.id.SC_rg_motif_nj);
+        btnInspecter = findViewById(R.id.SC_btn_inspecter_nj);
 
         btnInspecter.setOnClickListener(v -> {
 
@@ -72,11 +72,11 @@ public class MainActivity extends Activity {
             // إنشاء نص الدافع
             String motif = "";
 
-            if (selectedId == R.id.rb_tourisme_nj) {
+            if (selectedId == R.id.SC_rb_tourisme_nj) {
                 motif = "Tourisme";
-            } else if (selectedId == R.id.rb_passe_nj) {
+            } else if (selectedId == R.id.SC_rb_passe_nj) {
                 motif = "Modification du passé";
-            } else if (selectedId == R.id.rb_fuite_nj) {
+            } else if (selectedId == R.id.SC_rb_fuite_nj) {
                 motif = "Fuite";
             }
 
